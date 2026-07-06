@@ -1,0 +1,6 @@
+{
+  "name": "Billetterie Numérique 48H UV-BF",
+  "description": "Système complet de billetterie numérique pour les 48H de l'Université Virtuelle du Burkina Faso (UV-BF). Permet l'achat, la génération, le téléchargement, le contrôle et la gestion centralisée des tickets.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

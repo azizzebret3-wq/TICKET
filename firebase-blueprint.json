@@ -1,0 +1,56 @@
+{
+  "entities": {
+    "ticket": {
+      "keys": {
+        "id": "string",
+        "seq": "number",
+        "nom": "string",
+        "prenom": "string",
+        "telephone": "string",
+        "email": "string?",
+        "statut": "string",
+        "createdAt": "string",
+        "usedAt": "string?",
+        "paymentMethod": "string",
+        "paymentRef": "string",
+        "amount": "number",
+        "eventDay": "string"
+      }
+    },
+    "log": {
+      "keys": {
+        "id": "string",
+        "ticketId": "string",
+        "timestamp": "string",
+        "statut": "string",
+        "details": "string",
+        "nom": "string?",
+        "prenom": "string?"
+      }
+    },
+    "settings": {
+      "keys": {
+        "eventName": "string",
+        "eventDates": "string",
+        "eventLocation": "string",
+        "ticketPrice": "number",
+        "promoCode": "string",
+        "promoDiscount": "number"
+      }
+    }
+  },
+  "firestore": {
+    "tickets": {
+      "documentId": "ticket.id",
+      "entity": "ticket"
+    },
+    "logs": {
+      "documentId": "log.id",
+      "entity": "log"
+    },
+    "settings": {
+      "documentId": "settings_id",
+      "entity": "settings"
+    }
+  }
+}
