@@ -351,7 +351,7 @@ export default function TicketCard({ ticket, settings }: TicketCardProps) {
                   </div>
                   <div>
                     <div className="text-[9px] text-gray-400 font-bold uppercase tracking-wider">Téléphone :</div>
-                    <div className="text-sm font-black text-slate-900 font-mono">
+                    <div className="text-sm font-black text-slate-900 font-mono whitespace-nowrap">
                       {ticket.telephone.replace(/(\d{2})(\d{2})(\d{2})(\d{2})/, "$1 $2 $3 $4")}
                     </div>
                   </div>
