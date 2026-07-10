@@ -339,7 +339,7 @@ export default function ParticipantView({ settings, onAddTicket, tickets }: Part
                           <span className="text-xs font-black block text-slate-900">Pass Complet</span>
                           <span className="text-[10px] font-bold text-slate-500 block leading-tight mt-1">Jour 1 & Jour 2</span>
                         </div>
-                        <span className="text-xs font-mono font-black text-[#006633] mt-3 block">500 FCFA</span>
+                        <span className="text-xs font-mono font-black text-[#006633] mt-3 block">1 000 FCFA</span>
                       </button>
                     </div>
                   </div>
