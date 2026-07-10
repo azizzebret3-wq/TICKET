@@ -26,7 +26,7 @@ export const INITIAL_TICKETS: Ticket[] = [
     statut: 'valide',
     paymentMethod: 'orange_money',
     paymentRef: 'TEST-REF-001',
-    amount: 1000,
+    amount: 500,
     eventDay: 'jour1',
     createdAt: new Date().toISOString(),
     usedAt: null

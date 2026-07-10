@@ -52,13 +52,13 @@ export default function ParticipantView({ settings, onAddTicket, tickets }: Part
   const [hasLookedUp, setHasLookedUp] = useState(false);
 
   // Computed price based on user instructions
-  // Jour 1 (24 Juillet) : 1000 FCFA (Soirée Cinématographique)
+  // Jour 1 (24 Juillet) : 500 FCFA (Soirée Cinématographique)
   // Jour 2 (25 Juillet) : 500 FCFA (Soirée Culturelle)
-  // Pass Complet (2 Jours) : 1500 FCFA
+  // Pass Complet (2 Jours) : 1000 FCFA
   const getBasePrice = (day: 'jour1' | 'jour2' | 'les_deux') => {
-    if (day === 'jour1') return 1000;
+    if (day === 'jour1') return 500;
     if (day === 'jour2') return 500;
-    return 1500;
+    return 1000;
   };
   const basePrice = getBasePrice(eventDay);
   const ticketPrice = isPromoApplied ? Math.max(0, basePrice - settings.promoDiscount) : basePrice;
@@ -305,7 +305,7 @@ export default function ParticipantView({ settings, onAddTicket, tickets }: Part
                           <span className="text-xs font-black block text-slate-900">Jour 1</span>
                           <span className="text-[10px] font-bold text-slate-500 block leading-tight mt-1">Soirée Cinématographique</span>
                         </div>
-                        <span className="text-xs font-mono font-black text-[#006633] mt-3 block">1 000 FCFA</span>
+                        <span className="text-xs font-mono font-black text-[#006633] mt-3 block">500 FCFA</span>
                       </button>
 
                       <button
@@ -339,7 +339,7 @@ export default function ParticipantView({ settings, onAddTicket, tickets }: Part
                           <span className="text-xs font-black block text-slate-900">Pass Complet</span>
                           <span className="text-[10px] font-bold text-slate-500 block leading-tight mt-1">Jour 1 & Jour 2</span>
                         </div>
-                        <span className="text-xs font-mono font-black text-[#006633] mt-3 block">1 500 FCFA</span>
+                        <span className="text-xs font-mono font-black text-[#006633] mt-3 block">500 FCFA</span>
                       </button>
                     </div>
                   </div>
@@ -554,10 +554,10 @@ export default function ParticipantView({ settings, onAddTicket, tickets }: Part
                           `🎟️ ID du Ticket : ${generatedTicket.id}\n` +
                           `📅 Programme : ${
                             generatedTicket.eventDay === 'jour1' 
-                              ? 'Jour 1 : Soirée Cinématographique (1000F)' 
+                              ? 'Jour 1 : Soirée Cinématographique (500F)' 
                               : generatedTicket.eventDay === 'jour2' 
                                 ? 'Jour 2 : Soirée Culturelle (500F)' 
-                                : 'Pass Complet 2 Jours (1500F)'
+                                : 'Pass Complet 2 Jours (1000F)'
                           }\n` +
                           `💵 Montant : ${generatedTicket.amount} FCFA\n` +
                           `🔒 Présentez ce message à l'entrée de l'événement.`

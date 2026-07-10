@@ -145,10 +145,10 @@ export default function TicketCard({ ticket, settings }: TicketCardProps) {
     const text = `Bonjour ${ticket.prenom} ${ticket.nom}, voici votre ticket d'entrée pour les 48H de l'UVBF !\n\n` +
       `🎟️ ID du Ticket : ${ticket.id}\n` +
       `📅 Programme : ${ticket.eventDay === 'jour1'
-        ? 'Jour 1 : Soirée Cinématographique (1000F)'
+        ? 'Jour 1 : Soirée Cinématographique (500F)'
         : ticket.eventDay === 'jour2'
           ? 'Jour 2 : Soirée Culturelle (500F)'
-          : 'Pass Complet 2 Jours (1500F)'
+          : 'Pass Complet 2 Jours (1000F)'
       }\n` +
       `💵 Montant : ${ticket.amount} FCFA\n\n` +
       `🔒 Présentez ce message à l'entrée de l'événement pour validation.`;
@@ -202,10 +202,10 @@ export default function TicketCard({ ticket, settings }: TicketCardProps) {
       `Bonjour ${ticket.prenom} ${ticket.nom}, voici votre ticket d'entrée pour les 48H de l'UVBF !\n\n` +
       `🎟️ ID du Ticket : ${ticket.id}\n` +
       `📅 Programme : ${ticket.eventDay === 'jour1'
-        ? 'Jour 1 : Soirée Cinématographique (1000F)'
+        ? 'Jour 1 : Soirée Cinématographique (500F)'
         : ticket.eventDay === 'jour2'
           ? 'Jour 2 : Soirée Culturelle (500F)'
-          : 'Pass Complet 2 Jours (1500F)'
+          : 'Pass Complet 2 Jours (1000F)'
       }\n` +
       `💵 Montant : ${ticket.amount} FCFA\n\n` +
       `🔒 Présentez ce message ou l'image téléchargée à l'entrée pour validation.`

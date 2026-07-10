@@ -87,11 +87,11 @@ export default function AdminView({
   // Password confirmation
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    if (password === 'admin48h') {
+    if (password === 'Idrissa2026') {
       setIsAuthenticated(true);
       setLoginError('');
     } else {
-      setLoginError('Mot de passe incorrect. Astuce: admin48h');
+      setLoginError('Mot de passe incorrect. Astuce: Idrissa2026');
     }
   };
 
@@ -262,7 +262,7 @@ export default function AdminView({
           </form>
 
           <div className="mt-6 pt-4 border-t border-slate-100 text-center text-[10px] text-slate-400 font-bold uppercase tracking-wider">
-            Mot de passe d'évaluation : <b className="font-mono text-slate-700">admin48h</b>
+            Mot de passe d'évaluation : <b className="font-mono text-slate-700">Idrissa2026</b>
           </div>
         </div>
       ) : (
